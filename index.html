@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Premium static website for Class 12 Mathematics Chapter 4 Determinants.">
+  <title>MathsForge | Determinants</title>
+  <style>
+    :root{color-scheme:light;--ink:#111827;--text:#536170;--muted:#718096;--line:rgba(15,23,42,.11);--panel:rgba(255,255,255,.86);--soft:#d9f1f7;--brand:#145c70;--warm:#ea7a3a;--sun:#f5b942;--mint:#b9f6de;--bg:#f7fbfc}
+    :root.dark{color-scheme:dark;--ink:#f8fafc;--text:#c8d6dc;--muted:#9eb2ba;--line:rgba(255,255,255,.13);--panel:rgba(255,255,255,.055);--soft:rgba(185,246,222,.1);--brand:#b9f6de;--bg:#071016}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;min-width:320px;background:var(--bg);color:var(--ink);font-family:Manrope,Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}button,input,select{font:inherit}button{cursor:pointer}a{color:inherit}.wrap{width:min(1180px,100%);margin:auto;padding:0 22px}.topbar{position:fixed;inset:12px 12px auto;z-index:20}.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;border:1px solid rgba(255,255,255,.75);border-radius:18px;background:rgba(255,255,255,.82);box-shadow:0 20px 70px rgba(15,23,42,.1);backdrop-filter:blur(16px);padding:12px 14px}.dark .nav{border-color:rgba(255,255,255,.1);background:rgba(7,16,22,.82)}.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:950}.brand-icon{display:grid;place-items:center;width:38px;height:38px;border-radius:10px;background:#111827;color:white}.dark .brand-icon{background:var(--mint);color:#111827}.brand span:last-child{font-size:14px}.brand em{font-style:normal;color:#145c70}.dark .brand em{color:var(--mint)}.links{display:flex;gap:4px;align-items:center}.links a,.mode,.menu{border:0;border-radius:10px;background:transparent;color:#64748b;font-size:11px;font-weight:900;text-decoration:none;padding:9px 11px}.links a:hover,.mode:hover,.menu:hover{background:var(--soft);color:var(--brand)}.mode,.menu{border:1px solid var(--line);background:var(--panel);color:var(--ink)}.menu{display:none}.hero{position:relative;overflow:hidden;padding:148px 0 84px;background:linear-gradient(180deg,rgba(247,251,252,.96),rgba(232,246,248,.94) 72%,var(--bg))}.dark .hero{background:linear-gradient(180deg,#071016,#0c1d27 72%,#071016)}.grid-bg{position:absolute;inset:0;background-image:linear-gradient(rgba(20,92,112,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(20,92,112,.07) 1px,transparent 1px);background-size:44px 44px;mask-image:linear-gradient(to bottom,black,transparent 92%)}.hero .wrap{position:relative;z-index:1}.eyebrow{display:flex;align-items:center;gap:10px;color:var(--brand);font-size:10px;font-weight:950;text-transform:uppercase;letter-spacing:.16em}.eyebrow:before{content:"";width:30px;height:1px;background:var(--brand);opacity:.45}.hero h1{max-width:930px;margin:16px 0 0;font-size:clamp(3rem,7vw,5.9rem);line-height:.98;font-weight:950;letter-spacing:0}.hero p{max-width:760px;color:var(--text);font-size:17px;line-height:1.8;font-weight:700}.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}.primary,.ghost{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:999px;padding:12px 18px;font-size:12px;font-weight:950;text-decoration:none}.primary{border:0;background:#111827;color:white;box-shadow:0 18px 42px rgba(15,23,42,.16)}.dark .primary{background:var(--mint);color:#111827}.ghost{border:1px solid var(--line);background:var(--panel);color:var(--ink)}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;margin-top:52px;max-width:760px;overflow:hidden;border:1px solid rgba(255,255,255,.75);border-radius:10px;background:rgba(255,255,255,.5);box-shadow:0 22px 70px rgba(15,23,42,.1)}.dark .stats{border-color:var(--line);background:rgba(255,255,255,.04)}.stats div{display:grid;place-items:center;align-content:center;gap:4px;min-height:100px;background:rgba(255,255,255,.45)}.dark .stats div{background:rgba(255,255,255,.035)}.stats strong{font-size:26px}.stats span{color:#64748b;font-size:10px;font-weight:950;text-transform:uppercase}.dark .stats span{color:#9eb2ba}section{padding:72px 0;border-top:1px solid var(--line)}section.tint{background:rgba(255,255,255,.55)}.dark section.tint{background:rgba(255,255,255,.025)}.section-head h2{max-width:850px;margin:14px 0 0;font-size:clamp(2rem,4vw,3.4rem);line-height:1.08;font-weight:950;letter-spacing:0}.section-head p{max-width:760px;color:var(--text);line-height:1.75;font-weight:700}.grid{display:grid;gap:16px}.cards-3{grid-template-columns:repeat(3,minmax(0,1fr))}.cards-2{grid-template-columns:repeat(2,minmax(0,1fr))}.card,.formula,.derivation,.diagram,.question-card,.lab-card,.print-sheet{border:1px solid var(--line);border-radius:10px;background:var(--panel);box-shadow:0 18px 48px rgba(15,23,42,.07);padding:18px}.dark .card,.dark .formula,.dark .derivation,.dark .diagram,.dark .question-card,.dark .lab-card,.dark .print-sheet{box-shadow:none}.card h3,.formula h3,.derivation h3,.diagram h3,.question-card h3,.lab-card h3{margin:8px 0;color:var(--ink);font-size:18px}.card p,.formula p,.derivation p,.diagram p,.question-card p,.lab-card p{color:var(--text);line-height:1.65;font-weight:700}.pill-row{display:flex;flex-wrap:wrap;gap:8px}.pill-row span,.tag{display:inline-flex;border-radius:999px;background:var(--soft);color:var(--brand);padding:5px 9px;font-size:10px;font-weight:950;text-transform:uppercase}.formula-code{margin:12px 0;border-radius:10px;background:#111827;color:white;padding:14px;overflow:auto;font-family:Consolas,ui-monospace,monospace;font-weight:800}.dark .formula-code{background:rgba(185,246,222,.1)}.note-list{display:grid;gap:10px;margin:14px 0 0;padding:0;list-style:none}.note-list li{border-left:3px solid var(--brand);background:var(--soft);padding:10px 12px;color:var(--text);line-height:1.55;font-weight:750}.derivation summary{cursor:pointer;font-weight:950}.derivation ol{color:var(--text);line-height:1.65;font-weight:700}.diagram{overflow:hidden;padding:0}.diagram svg{width:100%;display:block;background:linear-gradient(135deg,rgba(217,241,247,.85),rgba(255,255,255,.68));color:#145c70}.dark .diagram svg{background:linear-gradient(135deg,rgba(20,92,112,.22),rgba(255,255,255,.04))}.diagram svg text{fill:#334155;font-size:13px;font-weight:900}.dark .diagram svg text{fill:#e2e8f0}.diagram-body{padding:16px}.search{display:flex;align-items:center;gap:10px;border:1px solid var(--line);border-radius:10px;background:var(--panel);padding:6px 12px;margin:26px 0 16px}.search input{width:100%;min-height:44px;border:0;background:transparent;color:var(--ink);outline:0;font-weight:800}.lab-shell{display:grid;grid-template-columns:1fr 360px;gap:18px}.stage{min-height:420px;border:1px solid var(--line);border-radius:10px;background:linear-gradient(135deg,rgba(217,241,247,.65),rgba(255,255,255,.75));padding:16px}.dark .stage{background:linear-gradient(135deg,rgba(20,92,112,.2),rgba(255,255,255,.035))}.stage svg{width:100%;height:300px}.lab-result{border-left:3px solid var(--warm);background:rgba(245,185,66,.14);padding:12px;color:var(--text);line-height:1.6;font-weight:800}.mini-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.lab-card label{display:grid;gap:6px;margin-top:10px;color:var(--text);font-size:12px;font-weight:950}.lab-card input,.lab-card select{border:1px solid var(--line);border-radius:8px;background:var(--panel);color:var(--ink);padding:10px}.answer{display:none;border-top:1px solid var(--line);padding-top:12px}.answer.open{display:grid;gap:6px}.dashboard{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.dashboard ul{margin:0;padding-left:18px;color:var(--text);line-height:1.65;font-weight:700}.print-sheet{margin-top:24px}.print-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.footer{border-top:1px solid var(--line);padding:42px 0;background:var(--panel);color:var(--text);font-weight:700}.mobile-links{display:none}.hide{display:none!important}
+    @media(max-width:980px){.links{display:none}.menu{display:inline-flex}.mobile-links{display:grid;gap:8px;margin-top:8px;border:1px solid var(--line);border-radius:14px;background:var(--panel);padding:10px}.mobile-links a{text-decoration:none;font-size:12px;font-weight:950;color:var(--text);padding:10px}.cards-3,.cards-2,.dashboard,.lab-shell,.print-grid{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr)}}
+    @media print{.topbar,.cta,.lab-card,.practice-filter,.answer-toggle,.footer{display:none!important}section{padding:18px 0;border:0}.card,.formula,.derivation,.diagram,.question-card,.print-sheet{box-shadow:none;border:1px solid #ddd}.print-grid{grid-template-columns:1fr 1fr}.hero{padding:20px 0}.hero h1{font-size:36px}}
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <nav class="nav">
+      <a class="brand" href="#home" aria-label="MathsForge home"><span class="brand-icon">D</span><span>MATHS<em>FORGE</em></span></a>
+      <div class="links"><a href="#map">Map</a><a href="#notes">Notes</a><a href="#formulas">Formulas</a><a href="#derivations">Proofs</a><a href="#diagrams">Diagrams</a><a href="#lab">Lab</a><a href="#practice">Practice</a><a href="#dashboard">Revise</a><a href="#print">Print</a></div>
+      <div><button class="mode" type="button" id="mode">Dark</button><button class="menu" type="button" id="menu">Menu</button></div>
+    </nav>
+    <div class="mobile-links hide" id="mobileLinks"><a href="#map">Map</a><a href="#notes">Notes</a><a href="#formulas">Formulas</a><a href="#derivations">Proofs</a><a href="#diagrams">Diagrams</a><a href="#lab">Lab</a><a href="#practice">Practice</a><a href="#dashboard">Revise</a><a href="#print">Print</a></div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="grid-bg"></div>
+      <div class="wrap">
+        <p class="eyebrow">Class 12 Mathematics / Chapter 4</p>
+        <h1>Determinants</h1>
+        <p>A focused visual website for determinant expansion, properties, minors, cofactors, adjoint, inverse by adjoint, area of triangle, and solving linear equations.</p>
+        <div class="cta"><a class="primary" href="#notes">Start learning</a><a class="ghost" href="#lab">Open interactive lab</a><a class="ghost" href="#print">Printable sheet</a></div>
+        <div class="stats">
+          <div><strong>8</strong><span>note sections</span></div>
+          <div><strong>8</strong><span>formula cards</span></div>
+          <div><strong>12</strong><span>practice questions</span></div>
+          <div><strong>0</strong><span>paid services</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="tint" id="map">
+      <div class="wrap">
+        <div class="section-head"><p class="eyebrow">Topic map</p><h2>From determinant value to inverse and systems.</h2><p>Determinants are strongest when you combine properties, cofactors, and geometric meaning.</p></div>
+        <div class="grid cards-3"><article class="card"><div class="pill-row"><span>01</span></div><h3>Meaning</h3><p>A determinant is a scalar attached to a square matrix.</p></article><article class="card"><div class="pill-row"><span>02</span></div><h3>Expansion</h3><p>Use row or column expansion with cofactors.</p></article><article class="card"><div class="pill-row"><span>03</span></div><h3>Properties</h3><p>Apply row/column properties to simplify before expansion.</p></article><article class="card"><div class="pill-row"><span>04</span></div><h3>Minors and cofactors</h3><p>Build cofactors using signs and sub-determinants.</p></article><article class="card"><div class="pill-row"><span>05</span></div><h3>Adjoint and inverse</h3><p>Use adj A and determinant to find inverse.</p></article><article class="card"><div class="pill-row"><span>06</span></div><h3>Applications</h3><p>Find area of triangle and solve linear equations.</p></article></div>
+      </div>
+    </section>
+
+    <section id="notes">
+      <div class="wrap">
+        <div class="section-head"><p class="eyebrow">Deep notes</p><h2>Section-wise notes with CBSE and JEE lenses.</h2><p>Each card gives the idea, board writing angle, exam focus, and common trap.</p></div>
+        <label class="search practice-filter">Search notes <input id="noteSearch" placeholder="Type a concept, formula, trap, or keyword"></label>
+        <div class="grid cards-2" id="noteGrid"><article class="card note-card" data-note="determinant is square only only square matrices have determinants. first check order before writing determinant. non-square determinant questions are invalid. a 2 x 3 matrix has no determinant."><div class="pill-row"><span>01</span><span>Basics</span></div><h3>Determinant is square only</h3><p>Only square matrices have determinants.</p><ul class="note-list"><li><b>CBSE writing:</b> First check order before writing determinant.</li><li><b>JEE focus:</b> Non-square determinant questions are invalid.</li><li><b>Common trap:</b> A 2 x 3 matrix has no determinant.</li></ul></article><article class="card note-card" data-note="second order determinant for [[a,b],[c,d]], determinant is ad-bc. write diagonals clearly. use it for area scale and inverse. do not write ac-bd."><div class="pill-row"><span>02</span><span>2 x 2</span></div><h3>Second order determinant</h3><p>For [[a,b],[c,d]], determinant is ad-bc.</p><ul class="note-list"><li><b>CBSE writing:</b> Write diagonals clearly.</li><li><b>JEE focus:</b> Use it for area scale and inverse.</li><li><b>Common trap:</b> Do not write ac-bd.</li></ul></article><article class="card note-card" data-note="cofactor expansion a third order determinant can be expanded along any row or column. choose a row or column with zeros. smart expansion saves time. cofactor signs alternate."><div class="pill-row"><span>03</span><span>Expansion</span></div><h3>Cofactor expansion</h3><p>A third order determinant can be expanded along any row or column.</p><ul class="note-list"><li><b>CBSE writing:</b> Choose a row or column with zeros.</li><li><b>JEE focus:</b> Smart expansion saves time.</li><li><b>Common trap:</b> Cofactor signs alternate.</li></ul></article><article class="card note-card" data-note="row and column properties interchanging two rows changes sign; multiplying a row by k multiplies determinant by k. state the property used in simplification. properties are faster than direct expansion. adding multiple of one row to another does not change determinant."><div class="pill-row"><span>04</span><span>Properties</span></div><h3>Row and column properties</h3><p>Interchanging two rows changes sign; multiplying a row by k multiplies determinant by k.</p><ul class="note-list"><li><b>CBSE writing:</b> State the property used in simplification.</li><li><b>JEE focus:</b> Properties are faster than direct expansion.</li><li><b>Common trap:</b> Adding multiple of one row to another does not change determinant.</li></ul></article><article class="card note-card" data-note="when determinant is zero if two rows or columns are identical or proportional, determinant is zero. use this property before expanding. detect dependent rows quickly. only one pair being similar is enough."><div class="pill-row"><span>05</span><span>Zero</span></div><h3>When determinant is zero</h3><p>If two rows or columns are identical or proportional, determinant is zero.</p><ul class="note-list"><li><b>CBSE writing:</b> Use this property before expanding.</li><li><b>JEE focus:</b> Detect dependent rows quickly.</li><li><b>Common trap:</b> Only one pair being similar is enough.</li></ul></article><article class="card note-card" data-note="minor and cofactor minor m_ij is determinant after deleting row i and column j; cofactor a_ij=(-1)^(i+j)m_ij. write sign factor carefully. cofactors build adjoint. minor and cofactor differ by sign."><div class="pill-row"><span>06</span><span>Cofactor</span></div><h3>Minor and cofactor</h3><p>Minor M_ij is determinant after deleting row i and column j; cofactor A_ij=(-1)^(i+j)M_ij.</p><ul class="note-list"><li><b>CBSE writing:</b> Write sign factor carefully.</li><li><b>JEE focus:</b> Cofactors build adjoint.</li><li><b>Common trap:</b> Minor and cofactor differ by sign.</li></ul></article><article class="card note-card" data-note="adjoint formula for square a, a adj(a)=adj(a) a=|a|i. use inverse a^-1=adj(a)/|a| when |a| is not zero. adjoint identities are common in objective questions. adjoint is transpose of cofactor matrix."><div class="pill-row"><span>07</span><span>Inverse</span></div><h3>Adjoint formula</h3><p>For square A, A adj(A)=adj(A) A=|A|I.</p><ul class="note-list"><li><b>CBSE writing:</b> Use inverse A^-1=adj(A)/|A| when |A| is not zero.</li><li><b>JEE focus:</b> Adjoint identities are common in objective questions.</li><li><b>Common trap:</b> Adjoint is transpose of cofactor matrix.</li></ul></article><article class="card note-card" data-note="area and equations determinants give area of triangle and solve systems using inverse or cramer style methods. for area, take absolute value. zero determinant means collinear points in area questions. area cannot be negative."><div class="pill-row"><span>08</span><span>Application</span></div><h3>Area and equations</h3><p>Determinants give area of triangle and solve systems using inverse or Cramer style methods.</p><ul class="note-list"><li><b>CBSE writing:</b> For area, take absolute value.</li><li><b>JEE focus:</b> Zero determinant means collinear points in area questions.</li><li><b>Common trap:</b> Area cannot be negative.</li></ul></article></div>
+      </div>
+    </section>
+
+    <section class="tint" id="formulas">
+      <div class="wrap">
+        <div class="section-head"><p class="eyebrow">Formula sheet</p><h2>High-yield formulas with exact usage conditions.</h2><p>Use these as quick revision cards before solving examples.</p></div>
+        <div class="grid cards-3"><article class="formula"><div class="pill-row"><span>2 x 2</span></div><h3>Second order determinant</h3><div class="formula-code">|a b; c d| = ad - bc</div><p>Cross product difference.</p><ul class="note-list"><li><b>Example:</b> |3 1; 2 4|=12-2=10.</li><li><b>Trap:</b> Order of products matters.</li></ul></article><article class="formula"><div class="pill-row"><span>3 x 3</span></div><h3>Expansion along first row</h3><div class="formula-code">|A| = a11 A11 + a12 A12 + a13 A13</div><p>Multiply entries by their cofactors.</p><ul class="note-list"><li><b>Example:</b> Choose row with maximum zeros.</li><li><b>Trap:</b> Use cofactors, not just minors.</li></ul></article><article class="formula"><div class="pill-row"><span>Sign</span></div><h3>Cofactor sign</h3><div class="formula-code">A_ij = (-1)^(i+j) M_ij</div><p>Checkerboard signs are + - + / - + - / + - +.</p><ul class="note-list"><li><b>Example:</b> A12 = -M12.</li><li><b>Trap:</b> Forgetting the negative sign.</li></ul></article><article class="formula"><div class="pill-row"><span>Property</span></div><h3>Row swap</h3><div class="formula-code">Swapping two rows changes sign of determinant</div><p>One interchange multiplies determinant by -1.</p><ul class="note-list"><li><b>Example:</b> R1 &lt;-&gt; R2 changes D to -D.</li><li><b>Trap:</b> Two swaps bring original sign back.</li></ul></article><article class="formula"><div class="pill-row"><span>Property</span></div><h3>Scalar row</h3><div class="formula-code">If one row is multiplied by k, determinant is multiplied by k</div><p>Factor common row multiplier outside.</p><ul class="note-list"><li><b>Example:</b> Common 3 in one row makes determinant 3 times smaller after factoring.</li><li><b>Trap:</b> Multiplying whole determinant by k differs from multiplying every row.</li></ul></article><article class="formula"><div class="pill-row"><span>Zero</span></div><h3>Proportional rows</h3><div class="formula-code">Two proportional rows or columns =&gt; determinant 0</div><p>Rows are dependent.</p><ul class="note-list"><li><b>Example:</b> [1,2,3] and [2,4,6] make determinant zero.</li><li><b>Trap:</b> Must compare full row or column.</li></ul></article><article class="formula"><div class="pill-row"><span>Inverse</span></div><h3>Inverse by adjoint</h3><div class="formula-code">A^-1 = adj(A)/|A|, |A| != 0</div><p>Adjoint divided by determinant.</p><ul class="note-list"><li><b>Example:</b> Use for 2 x 2 and 3 x 3 inverse.</li><li><b>Trap:</b> Undefined when determinant is zero.</li></ul></article><article class="formula"><div class="pill-row"><span>Area</span></div><h3>Area of triangle</h3><div class="formula-code">Area = 1/2 | x1(y2-y3)+x2(y3-y1)+x3(y1-y2) |</div><p>Determinant formula for triangle area.</p><ul class="note-list"><li><b>Example:</b> If determinant part is 12, area is 6.</li><li><b>Trap:</b> Take absolute value.</li></ul></article></div>
+      </div>
+    </section>
+
+    <section id="derivations">
+      <div class="wrap">
+        <div class="section-head"><p class="eyebrow">Derivation bank</p><h2>Proofs that can be reproduced in exams.</h2><p>Open a proof, follow the steps, and check the final result.</p></div>
+        <div class="grid"><article class="derivation"><details><summary>Derive 2 x 2 determinant formula</summary><ol><li>Take determinant |a b; c d|.</li><li>Multiply entries on main diagonal: ad.</li><li>Multiply entries on other diagonal: bc.</li><li>Subtract to get ad-bc.</li></ol><p><b>Final:</b> ad-bc</p><p><b>Shortcut:</b> Main diagonal minus other diagonal.</p><p><b>Warning:</b> Works only for 2 x 2.</p></details></article><article class="derivation"><details><summary>Show determinant is zero when two rows are identical</summary><ol><li>Let determinant be D with two identical rows.</li><li>Interchange those two identical rows.</li><li>The determinant value stays D because entries did not change.</li><li>But row interchange changes sign, so D=-D and D=0.</li></ol><p><b>Final:</b> D=0</p><p><b>Shortcut:</b> Swap identical rows.</p><p><b>Warning:</b> Rows must be exactly identical.</p></details></article><article class="derivation"><details><summary>Prove A adj(A)=|A|I idea</summary><ol><li>Entry on diagonal becomes expansion of determinant along a row.</li><li>So diagonal entries are |A|.</li><li>Off-diagonal entries represent expansion with two equal rows.</li><li>Those off-diagonal determinants are zero.</li></ol><p><b>Final:</b> A adj(A)=|A|I</p><p><b>Shortcut:</b> Use cofactor expansion.</p><p><b>Warning:</b> Adjoint is transpose of cofactor matrix.</p></details></article><article class="derivation"><details><summary>Area formula for triangle</summary><ol><li>Write points in determinant with last column 1.</li><li>Expand determinant.</li><li>The signed double area is obtained.</li><li>Take absolute value and divide by 2.</li></ol><p><b>Final:</b> Area is half absolute determinant.</p><p><b>Shortcut:</b> Use shoelace determinant.</p><p><b>Warning:</b> Absolute value is required.</p></details></article></div>
+      </div>
+    </section>
+
+    <section class="tint" id="diagrams">
+      <div class="wrap">
+        <div class="section-head"><p class="eyebrow">2D diagram bank</p><h2>Clean visual models for fast memory.</h2><p>Each diagram is SVG based, so it works fully offline and on GitHub Pages.</p></div>
+        <div class="grid cards-2"><article class="diagram"><svg viewBox="0 0 420 280" aria-hidden="true">
+      
+    <defs>
+      <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+        <path d="M0,0 L0,6 L9,3 z" fill="#145c70"></path>
+      </marker>
+    </defs>
+    <rect x="14" y="14" width="392" height="252" rx="18" fill="currentColor" opacity=".045"></rect>
+  
+      <line x1="82" y1="210" x2="352" y2="210" stroke="#94a3b8"></line>
+      <line x1="110" y1="235" x2="110" y2="50" stroke="#94a3b8"></line>
+      <polygon points="110,210 252,210 318,88 176,88" fill="#d9f1f7" stroke="#145c70" stroke-width="4"></polygon>
+      <line x1="110" y1="210" x2="252" y2="210" stroke="#ea7a3a" stroke-width="4" marker-end="url(#arrow)"></line>
+      <line x1="110" y1="210" x2="176" y2="88" stroke="#145c70" stroke-width="4" marker-end="url(#arrow)"></line>
+      <text x="160" y="230">vector 1</text><text x="126" y="104">vector 2</text>
+      <text x="172" y="155">area = |ad - bc|</text>
+    </svg><div class="diagram-body"><div class="pill-row"><span>Area</span></div><h3>Determinant as area scale</h3><p>The absolute determinant of two vectors gives parallelogram area.</p><p><b>On paper:</b> Draw two vectors from origin and complete parallelogram.</p></div></article><article class="diagram"><svg viewBox="0 0 420 280" aria-hidden="true">
+      
+    <defs>
+      <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+        <path d="M0,0 L0,6 L9,3 z" fill="#145c70"></path>
+      </marker>
+    </defs>
+    <rect x="14" y="14" width="392" height="252" rx="18" fill="currentColor" opacity=".045"></rect>
+  
+      <rect x="76" y="60" width="110" height="140" rx="10" fill="#fff" stroke="#145c70" stroke-width="3"></rect>
+      <text x="105" y="112">A</text><text x="100" y="156">det A</text>
+      <line x1="196" y1="130" x2="250" y2="130" stroke="#145c70" stroke-width="4" marker-end="url(#arrow)"></line>
+      <rect x="264" y="60" width="110" height="140" rx="10" fill="#fff3d6" stroke="#ea7a3a" stroke-width="3"></rect>
+      <text x="292" y="112">A^-1</text><text x="285" y="156">adj A / |A|</text>
+      <text x="98" y="235">inverse exists only when determinant is not zero</text>
+    </svg><div class="diagram-body"><div class="pill-row"><span>Adjoint</span></div><h3>Adjoint to inverse</h3><p>Adjoint and determinant combine to form inverse.</p><p><b>On paper:</b> Write A^-1=adj(A)/|A| under non-zero condition.</p></div></article><article class="diagram"><svg viewBox="0 0 420 280" aria-hidden="true">
+      
+    <defs>
+      <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+        <path d="M0,0 L0,6 L9,3 z" fill="#145c70"></path>
+      </marker>
+    </defs>
+    <rect x="14" y="14" width="392" height="252" rx="18" fill="currentColor" opacity=".045"></rect>
+  
+      <line x1="82" y1="210" x2="352" y2="210" stroke="#94a3b8"></line>
+      <line x1="110" y1="235" x2="110" y2="50" stroke="#94a3b8"></line>
+      <polygon points="110,210 252,210 318,88 176,88" fill="#d9f1f7" stroke="#145c70" stroke-width="4"></polygon>
+      <line x1="110" y1="210" x2="252" y2="210" stroke="#ea7a3a" stroke-width="4" marker-end="url(#arrow)"></line>
+      <line x1="110" y1="210" x2="176" y2="88" stroke="#145c70" stroke-width="4" marker-end="url(#arrow)"></line>
+      <text x="160" y="230">vector 1</text><text x="126" y="104">vector 2</text>
+      <text x="172" y="155">area = |ad - bc|</text>
+    </svg><div class="diagram-body"><div class="pill-row"><span>Triangle</span></div><h3>Triangle area determinant</h3><p>Coordinate area is half of a determinant.</p><p><b>On paper:</b> Put x, y, 1 rows and take absolute value.</p></div></article><article class="diagram"><svg viewBox="0 0 420 280" aria-hidden="true">
+      
+    <defs>
+      <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+        <path d="M0,0 L0,6 L9,3 z" fill="#145c70"></path>
+      </marker>
+    </defs>
+    <rect x="14" y="14" width="392" height="252" rx="18" fill="currentColor" opacity=".045"></rect>
+  
+      <rect x="86" y="64" width="100" height="130" rx="10" fill="#fff" stroke="#145c70" stroke-width="3"></rect>
+      <rect x="234" y="64" width="100" height="130" rx="10" fill="#fff3d6" stroke="#ea7a3a" stroke-width="3"></rect>
+      <line x1="136" y1="64" x2="136" y2="194" stroke="#94a3b8"></line>
+      <line x1="86" y1="129" x2="186" y2="129" stroke="#94a3b8"></line>
+      <line x1="284" y1="64" x2="284" y2="194" stroke="#94a3b8"></line>
+      <line x1="234" y1="129" x2="334" y2="129" stroke="#94a3b8"></line>
+      <text x="105" y="104">a11</text><text x="151" y="104">a12</text><text x="105" y="169">a21</text><text x="151" y="169">a22</text>
+      <text x="254" y="104">b11</text><text x="300" y="104">b12</text><text x="254" y="169">b21</text><text x="300" y="169">b22</text>
+      <text x="201" y="136">x</text><text x="118" y="232">row by column multiplication</text>
+    </svg><div class="diagram-body"><div class="pill-row"><span>Cofactor</span></div><h3>Cofactor grid</h3><p>Cofactor signs form a checkerboard pattern.</p><p><b>On paper:</b> Draw + - + / - + - / + - + before expansion.</p></div></article></div>
+      </div>
+    </section>
+
+    <section id="lab">
+      <div class="wrap">
+        <div class="section-head"><p class="eyebrow">Interactive simulation</p><h2>Determinant And Area Lab</h2><p>Change a 2 x 2 matrix and see determinant, sign, and area scale instantly.</p></div>
+        <div class="lab-shell">
+          <div class="stage"><svg id="labSvg" viewBox="0 0 520 300" aria-hidden="true"></svg><div class="lab-result" id="labOutput"></div></div>
+          
+      <div class="lab-card">
+        <h3>Determinant And Area Lab</h3>
+        <p>For A = [[a,b],[c,d]], the determinant is ad - bc and area is its absolute value.</p>
+        <div class="mini-grid">
+          <label>A <input data-var="a" type="number" value="3"></label><label>B <input data-var="b" type="number" value="1"></label><label>C <input data-var="c" type="number" value="2"></label><label>D <input data-var="d" type="number" value="4"></label>
+        </div>
+      </div>
+    
+        </div>
+      </div>
+    </section>
+
+    <section class="tint" id="practice">
+      <div class="wrap">
+        <div class="section-head"><p class="eyebrow">Practice bank</p><h2>Exam-style questions with answer reveal.</h2><p>Filter by keyword, try the question first, then reveal the answer and trap.</p></div>
+        <label class="search practice-filter">Filter questions <input id="questionSearch" placeholder="Try CBSE, JEE, proof, easy, hard, formula"></label>
+        <div class="grid cards-2" id="questionGrid"><article class="question-card" data-q="cbse easy find |3 1; 2 4|. 10"><div class="pill-row"><span>CBSE</span><span>Easy</span></div><h3>1. Find |3 1; 2 4|.</h3><button class="ghost answer-toggle" type="button">Show answer</button><div class="answer"><strong>Answer: 10</strong><p>3*4 - 1*2 = 12-2=10.</p><p><b>Trap:</b> Do not write 3*2 - 1*4.</p></div></article><article class="question-card" data-q="basics easy can a 2 x 3 matrix have a determinant? no"><div class="pill-row"><span>Basics</span><span>Easy</span></div><h3>2. Can a 2 x 3 matrix have a determinant?</h3><button class="ghost answer-toggle" type="button">Show answer</button><div class="answer"><strong>Answer: No</strong><p>Only square matrices have determinants.</p><p><b>Trap:</b> Do not confuse matrix with determinant.</p></div></article><article class="question-card" data-q="property medium what happens to determinant if two rows are interchanged? sign changes"><div class="pill-row"><span>Property</span><span>Medium</span></div><h3>3. What happens to determinant if two rows are interchanged?</h3><button class="ghost answer-toggle" type="button">Show answer</button><div class="answer"><strong>Answer: Sign changes</strong><p>One row swap multiplies determinant by -1.</p><p><b>Trap:</b> Magnitude stays same but sign changes.</p></div></article><article class="question-card" data-q="property medium if two rows are equal, what is determinant? 0"><div class="pill-row"><span>Property</span><span>Medium</span></div><h3>4. If two rows are equal, what is determinant?</h3><button class="ghost answer-toggle" type="button">Show answer</button><div class="answer"><strong>Answer: 0</strong><p>Interchanging equal rows changes sign but determinant remains same, so D=0.</p><p><b>Trap:</b> Do not expand unnecessarily.</p></div></article><article class="question-card" data-q="cofactor medium what is cofactor a12 in terms of minor m12? -m12"><div class="pill-row"><span>Cofactor</span><span>Medium</span></div><h3>5. What is cofactor A12 in terms of minor M12?</h3><button class="ghost answer-toggle" type="button">Show answer</button><div class="answer"><strong>Answer: -M12</strong><p>A12=(-1)^(1+2)M12=-M12.</p><p><b>Trap:</b> Sign is negative.</p></div></article><article class="question-card" data-q="inverse medium when is a^-1=adj(a)/|a| valid? when |a| != 0"><div class="pill-row"><span>Inverse</span><span>Medium</span></div><h3>6. When is A^-1=adj(A)/|A| valid?</h3><button class="ghost answer-toggle" type="button">Show answer</button><div class="answer"><strong>Answer: When |A| != 0</strong><p>Inverse exists only for non-singular square matrix.</p><p><b>Trap:</b> Do not divide by zero determinant.</p></div></article><article class="question-card" data-q="area medium if determinant part for triangle area is -14, what is area? 7"><div class="pill-row"><span>Area</span><span>Medium</span></div><h3>7. If determinant part for triangle area is -14, what is area?</h3><button class="ghost answer-toggle" type="button">Show answer</button><div class="answer"><strong>Answer: 7</strong><p>Area = 1/2|-14|=7.</p><p><b>Trap:</b> Area is not negative.</p></div></article><article class="question-card" data-q="jee hard if every entry of a 3 x 3 determinant is multiplied by 2, determinant becomes what? 8 times"><div class="pill-row"><span>JEE</span><span>Hard</span></div><h3>8. If every entry of a 3 x 3 determinant is multiplied by 2, determinant becomes what?</h3><button class="ghost answer-toggle" type="button">Show answer</button><div class="answer"><strong>Answer: 8 times</strong><p>Each of 3 rows is multiplied by 2, so determinant is multiplied by 2^3=8.</p><p><b>Trap:</b> Not just 2 times.</p></div></article><article class="question-card" data-q="property hard what operation does not change determinant: ri -&gt; ri + krj? it remains same"><div class="pill-row"><span>Property</span><span>Hard</span></div><h3>9. What operation does not change determinant: Ri -&gt; Ri + kRj?</h3><button class="ghost answer-toggle" type="button">Show answer</button><div class="answer"><strong>Answer: It remains same</strong><p>Adding multiple of one row to another row leaves determinant unchanged.</p><p><b>Trap:</b> Multiplying a row by k is different.</p></div></article><article class="question-card" data-q="cofactor medium what is adjoint of a? transpose of cofactor matrix"><div class="pill-row"><span>Cofactor</span><span>Medium</span></div><h3>10. What is adjoint of A?</h3><button class="ghost answer-toggle" type="button">Show answer</button><div class="answer"><strong>Answer: Transpose of cofactor matrix</strong><p>Find cofactor matrix, then transpose it.</p><p><b>Trap:</b> Do not forget transpose.</p></div></article><article class="question-card" data-q="cbse medium what is determinant of identity matrix of order 3? 1"><div class="pill-row"><span>CBSE</span><span>Medium</span></div><h3>11. What is determinant of identity matrix of order 3?</h3><button class="ghost answer-toggle" type="button">Show answer</button><div class="answer"><strong>Answer: 1</strong><p>Product of diagonal entries is 1.</p><p><b>Trap:</b> Identity determinant is not 3.</p></div></article><article class="question-card" data-q="proof hard prove determinant is zero if two columns are proportional. use column property"><div class="pill-row"><span>Proof</span><span>Hard</span></div><h3>12. Prove determinant is zero if two columns are proportional.</h3><button class="ghost answer-toggle" type="button">Show answer</button><div class="answer"><strong>Answer: Use column property</strong><p>Factor multiplier and get two identical columns, hence determinant zero.</p><p><b>Trap:</b> Proportional means full columns match by one multiplier.</p></div></article></div>
+      </div>
+    </section>
+
+    <section id="dashboard">
+      <div class="wrap">
+        <div class="section-head"><p class="eyebrow">Revision dashboard</p><h2>Last-day revision without panic.</h2><p>Use this dashboard to decide what to revise first and what mistakes to avoid.</p></div>
+        <div class="dashboard"><article class="card"><h3>Top concepts</h3><ul><li>Only square matrices have determinants</li><li>2 x 2 determinant is ad-bc</li><li>Cofactor signs alternate</li><li>Row properties simplify determinants</li><li>Inverse needs non-zero determinant</li></ul></article><article class="card"><h3>Top traps</h3><ul><li>Forgetting absolute value in area</li><li>Confusing minor with cofactor</li><li>Ignoring sign after row swap</li><li>Multiplying all rows changes determinant by k^n</li><li>Using inverse when determinant is zero</li></ul></article><article class="card"><h3>30-minute plan</h3><ul><li>5 min: 2 x 2 and 3 x 3 expansion</li><li>8 min: properties</li><li>6 min: minors and cofactors</li><li>6 min: adjoint inverse</li><li>5 min: area and systems</li></ul></article><article class="card"><h3>Question types</h3><ul><li>Evaluate determinant</li><li>Use properties</li><li>Find cofactors</li><li>Find adjoint</li><li>Find inverse</li><li>Find area</li></ul></article></div>
+      </div>
+    </section>
+
+    <section class="tint" id="print">
+      <div class="wrap">
+        <div class="section-head"><p class="eyebrow">Printable revision sheet</p><h2>Determinants in one scan.</h2><p>Print this page or save it as PDF for offline revision.</p></div>
+        <article class="print-sheet">
+          <div class="print-grid">
+            <div><h3>Core formulas</h3><ul><li><b>Second order determinant:</b> |a b; c d| = ad - bc</li><li><b>Expansion along first row:</b> |A| = a11 A11 + a12 A12 + a13 A13</li><li><b>Cofactor sign:</b> A_ij = (-1)^(i+j) M_ij</li><li><b>Row swap:</b> Swapping two rows changes sign of determinant</li><li><b>Scalar row:</b> If one row is multiplied by k, determinant is multiplied by k</li><li><b>Proportional rows:</b> Two proportional rows or columns =&gt; determinant 0</li></ul></div>
+            <div><h3>Common traps</h3><ul><li>Only square matrices have determinants.</li><li>Cofactor signs alternate.</li><li>Row swap changes sign.</li><li>Adding multiple of one row to another does not change determinant.</li><li>Area uses absolute value.</li><li>Inverse formula needs non-zero determinant.</li></ul></div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="wrap">MathsForge Chapter 4 is a free static public learning website for GitHub Pages. No paid hosting, database, backend, or paid API is required.</div></footer>
+
+  <script>
+    const root = document.documentElement;
+    const mode = document.getElementById('mode');
+    const menu = document.getElementById('menu');
+    const mobileLinks = document.getElementById('mobileLinks');
+    const savedMode = localStorage.getItem('mathsforge-ch4-mode');
+    if (savedMode === 'dark') root.classList.add('dark');
+    mode.textContent = root.classList.contains('dark') ? 'Light' : 'Dark';
+    mode.addEventListener('click', () => {
+      root.classList.toggle('dark');
+      localStorage.setItem('mathsforge-ch4-mode', root.classList.contains('dark') ? 'dark' : 'light');
+      mode.textContent = root.classList.contains('dark') ? 'Light' : 'Dark';
+    });
+    menu.addEventListener('click', () => mobileLinks.classList.toggle('hide'));
+
+    function connectFilter(inputId, cardSelector, attr) {
+      const input = document.getElementById(inputId);
+      const cards = Array.from(document.querySelectorAll(cardSelector));
+      input.addEventListener('input', () => {
+        const query = input.value.trim().toLowerCase();
+        cards.forEach((card) => card.classList.toggle('hide', query && !card.dataset[attr].includes(query)));
+      });
+    }
+    connectFilter('noteSearch', '.note-card', 'note');
+    connectFilter('questionSearch', '.question-card', 'q');
+
+    document.querySelectorAll('.answer-toggle').forEach((button) => {
+      button.addEventListener('click', () => {
+        const answer = button.nextElementSibling;
+        answer.classList.toggle('open');
+        button.textContent = answer.classList.contains('open') ? 'Hide answer' : 'Show answer';
+      });
+    });
+
+    const labKind = 'determinant';
+    const svg = document.getElementById('labSvg');
+    const out = document.getElementById('labOutput');
+
+    function values() {
+      const data = {};
+      document.querySelectorAll('[data-var]').forEach((input) => data[input.dataset.var] = Number(input.value));
+      return data;
+    }
+    function matrixText(m) {
+      return '[[' + m[0][0] + ', ' + m[0][1] + '], [' + m[1][0] + ', ' + m[1][1] + ']]';
+    }
+    function renderMatrixLab() {
+      const v = values();
+      const A = [[v.a, v.b], [v.c, v.d]];
+      const B = [[v.e, v.f], [v.g, v.h]];
+      const op = document.getElementById('operation').value;
+      let R;
+      if (op === 'add') R = [[v.a + v.e, v.b + v.f], [v.c + v.g, v.d + v.h]];
+      if (op === 'sub') R = [[v.a - v.e, v.b - v.f], [v.c - v.g, v.d - v.h]];
+      if (op === 'mul') R = [[v.a * v.e + v.b * v.g, v.a * v.f + v.b * v.h], [v.c * v.e + v.d * v.g, v.c * v.f + v.d * v.h]];
+      svg.innerHTML = '<rect x="40" y="60" width="120" height="140" rx="12" fill="#d9f1f7" stroke="#145c70" stroke-width="3"/><rect x="200" y="60" width="120" height="140" rx="12" fill="#fff3d6" stroke="#ea7a3a" stroke-width="3"/><rect x="360" y="60" width="120" height="140" rx="12" fill="#fff" stroke="#111827" stroke-width="3"/><text x="80" y="135">A</text><text x="240" y="135">B</text><text x="400" y="135">Result</text><line x1="170" y1="130" x2="190" y2="130" stroke="#145c70" stroke-width="4"/><line x1="330" y1="130" x2="350" y2="130" stroke="#145c70" stroke-width="4"/>';
+      out.textContent = 'A = ' + matrixText(A) + ' | B = ' + matrixText(B) + ' | Result = ' + matrixText(R);
+    }
+    function renderDeterminantLab() {
+      const v = values();
+      const det = v.a * v.d - v.b * v.c;
+      const area = Math.abs(det);
+      svg.innerHTML = '<line x1="60" y1="240" x2="460" y2="240" stroke="#94a3b8"/><line x1="90" y1="260" x2="90" y2="40" stroke="#94a3b8"/><polygon points="90,240 ' + (90 + v.a * 35) + ',' + (240 - v.c * 35) + ' ' + (90 + (v.a + v.b) * 35) + ',' + (240 - (v.c + v.d) * 35) + ' ' + (90 + v.b * 35) + ',' + (240 - v.d * 35) + '" fill="#d9f1f7" stroke="#145c70" stroke-width="4"/><text x="110" y="38">area = |det A|</text>';
+      out.textContent = 'det A = ' + v.a + '(' + v.d + ') - ' + v.b + '(' + v.c + ') = ' + det + '. Area scale = ' + area + '.';
+    }
+    function fnValue(kind, x) {
+      if (kind === 'cube') return x * x * x;
+      if (kind === 'reciprocal') return x === 0 ? NaN : 1 / x;
+      return x * x;
+    }
+    function derivativeValue(kind, x) {
+      if (kind === 'cube') return 3 * x * x;
+      if (kind === 'reciprocal') return x === 0 ? NaN : -1 / (x * x);
+      return 2 * x;
+    }
+    function renderDerivativeLab() {
+      const kind = document.getElementById('fn').value;
+      const x = Number(document.getElementById('xValue').value);
+      const y = fnValue(kind, x);
+      const slope = derivativeValue(kind, x);
+      const px = 260 + x * 38;
+      const py = 180 - (Number.isFinite(y) ? Math.max(-4, Math.min(4, y)) * 28 : 0);
+      svg.innerHTML = '<line x1="40" y1="180" x2="480" y2="180" stroke="#94a3b8"/><line x1="260" y1="35" x2="260" y2="270" stroke="#94a3b8"/><path d="M80 245 C150 210, 205 120, 260 90 C320 58, 390 118, 455 74" fill="none" stroke="#145c70" stroke-width="4"/><line x1="' + (px - 80) + '" y1="' + (py + 40) + '" x2="' + (px + 80) + '" y2="' + (py - 40) + '" stroke="#ea7a3a" stroke-width="4"/><circle cx="' + px + '" cy="' + py + '" r="7" fill="#111827"/>';
+      out.textContent = 'x = ' + x.toFixed(1) + ', f(x) = ' + (Number.isFinite(y) ? y.toFixed(3) : 'undefined') + ', f prime(x) = ' + (Number.isFinite(slope) ? slope.toFixed(3) : 'undefined') + '.';
+    }
+    function renderApplicationLab() {
+      const model = document.getElementById('model').value;
+      const x = Number(document.getElementById('xValue').value);
+      const value = model === 'area' ? x * (20 - 2 * x) : -x * x + 12 * x - 20;
+      const derivative = model === 'area' ? 20 - 4 * x : -2 * x + 12;
+      const nature = derivative > 0.05 ? 'increasing here' : derivative < -0.05 ? 'decreasing here' : 'critical point';
+      const px = 70 + x * 38;
+      const py = 230 - Math.max(0, Math.min(60, value)) * 2.4;
+      svg.innerHTML = '<line x1="50" y1="240" x2="480" y2="240" stroke="#94a3b8"/><line x1="70" y1="260" x2="70" y2="40" stroke="#94a3b8"/><path d="M70 230 C150 80, 270 60, 450 225" fill="none" stroke="#145c70" stroke-width="4"/><line x1="' + px + '" y1="50" x2="' + px + '" y2="240" stroke="#ea7a3a" stroke-width="3" stroke-dasharray="8 8"/><circle cx="' + px + '" cy="' + py + '" r="7" fill="#ea7a3a"/>';
+      out.textContent = 'x = ' + x.toFixed(1) + ', value = ' + value.toFixed(2) + ', derivative = ' + derivative.toFixed(2) + ', so the graph is ' + nature + '.';
+    }
+    function renderLab() {
+      if (labKind === 'matrix') renderMatrixLab();
+      else if (labKind === 'determinant') renderDeterminantLab();
+      else if (labKind === 'derivative') renderDerivativeLab();
+      else renderApplicationLab();
+    }
+    document.querySelectorAll('#lab input, #lab select').forEach((control) => control.addEventListener('input', renderLab));
+    document.querySelectorAll('#lab select').forEach((control) => control.addEventListener('change', renderLab));
+    renderLab();
+  </script>
+</body>
+</html>
